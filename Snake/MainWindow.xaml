@@ -59,6 +59,7 @@
                            VerticalAlignment="Center"
                            TextWrapping="Wrap"/>
             </Border>
+            <Image Source="/THIẾT KẾ GAME RẮN ĂN MỒI (6).png" Stretch="Fill"/>
         </Grid>
     </Viewbox>
 </Window>
