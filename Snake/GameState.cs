@@ -120,7 +120,7 @@ namespace Snake
 
             Direction lastDir = GetLastDirection(); //Lấy hướng di chuyển cuối cùng từ danh sách các thay đổi hướng
             return newDir != lastDir && newDir != lastDir.Opposite(); //trả về hướng mới; ktra hướng mới có khác với hướng cuối cùng (lastDir) và không phải là hướng ngược lại (lastDir.Opposite())
-                                                                      //Trả về true nếu có thể thay đổi hướng, ngược lại trả về false
+                                                                      //Trả về true nếu có thể thay đổi hướng, ngược lại trả về false.
         }
 
         public void ChangeDirection(Direction dir) //Thay đổi hướng di chuyển của rắn nếu có thể
