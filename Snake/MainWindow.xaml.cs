@@ -58,7 +58,7 @@ namespace Snake
                 e.Handled = true; // Đánh dấu sự kiện là đã xử lý.
             }
 
-            if (!gameRunning) // Nếu trò chơi không đang chạy,
+            if (!gameRunning) // Nếu trò chơi đang không chạy,
             {
                 gameRunning = true; // Đặt cờ trò chơi đang chạy thành true.
                 await RunGame(); // Chạy trò chơi.

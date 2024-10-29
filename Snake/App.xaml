@@ -2,13 +2,25 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Snake"
-             StartupUri="MainWindow.xaml">
+             StartupUri="MainWindow.xaml"> 
+    <!-- Định nghĩa tài nguyên ứng dụng -->
     <Application.Resources>
+        <!-- Màu nền chính -->
         <SolidColorBrush x:Key="BackgroundColor">#211E2B</SolidColorBrush>
+
+        <!-- Màu nền của lưới -->
         <SolidColorBrush x:Key="GridBackgroundColor">#312C40</SolidColorBrush>
+
+        <!-- Màu đường lưới -->
         <SolidColorBrush x:Key="GridLineColor">#4F4867</SolidColorBrush>
+
+        <!-- Màu văn bản -->
         <SolidColorBrush x:Key="TextColor">#EBEBEB</SolidColorBrush>
+
+        <!-- Màu lớp phủ -->
         <SolidColorBrush x:Key="OverlayColor">#7F000000</SolidColorBrush>
+
+        <!-- Phông chữ chính -->
         <FontFamily x:Key="MainFont">Assets/#Droid Sans Mono</FontFamily>
     </Application.Resources>
 </Application>

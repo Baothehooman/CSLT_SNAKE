@@ -14,13 +14,16 @@
         Icon="Assets/icon.ico"
         PreviewKeyDown="Window_PreviewKeyDown"
         KeyDown="Window_KeyDown">
+    <!-- Viewbox giúp co giãn các phần tử con để phù hợp với kích thước -->
     <Viewbox>
         <Grid>
+            <!-- Định nghĩa hai hàng trong lưới -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
+            <!-- Hiển thị điểm số -->
             <TextBlock x:Name="ScoreText"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
@@ -28,6 +31,7 @@
                    FontSize="22"
                    Margin="10"/>
 
+            <!-- Viền bao quanh lưới trò chơi -->
             <Border x:Name="GridBorder"
                 Grid.Row="1"
                 BorderBrush="{StaticResource GridLineColor}"
@@ -36,6 +40,7 @@
                 VerticalAlignment="Center"
                 RenderOptions.EdgeMode="Aliased"
                 Margin="20,0,20,20">
+                <!-- Lưới trò chơi -->
                 <UniformGrid x:Name="GameGrid"
                          Width="400"
                          Height="400"
@@ -45,6 +50,7 @@
                 </UniformGrid>
             </Border>
 
+            <!-- Lớp phủ trò chơi -->
             <Border x:Name="Overlay"
                     Grid.Row="1"
                     Background="{StaticResource OverlayColor}"
@@ -52,6 +58,7 @@
                     Height="{Binding Path=ActualHeight, ElementName=GridBorder}"
                     Margin="{Binding Path=Margin, ElementName=GridBorder}"
                     RenderOptions.EdgeMode="Aliased">
+                <!-- Thông điệp nhắc người chơi bắt đầu -->
                 <TextBlock x:Name="OverlayText"
                            Text="PRESS ANY KEY TO START"
                            FontSize="26"
@@ -59,6 +66,7 @@
                            VerticalAlignment="Center"
                            TextWrapping="Wrap"/>
             </Border>
+            <!-- Hình ảnh nền của trò chơi -->
             <Image Source="/THIẾT KẾ GAME RẮN ĂN MỒI (6).png" Stretch="Fill"/>
         </Grid>
     </Viewbox>
