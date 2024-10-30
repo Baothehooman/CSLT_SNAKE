@@ -9,7 +9,7 @@ using System.Windows;
 namespace Snake
 {
     /// <summary>
-    /// Interaction logic for App.xaml
+    /// Tương tác logic cho App.xaml
     /// </summary>
     public partial class App : Application
     {
