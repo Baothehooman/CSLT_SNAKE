@@ -60,7 +60,7 @@
                     RenderOptions.EdgeMode="Aliased">
                 <!-- Thông điệp nhắc người chơi bắt đầu -->
                 <TextBlock x:Name="OverlayText"
-                           Text="PRESS ANY KEY TO START"
+                           Text="UEH TO SUSTAINABILITY"
                            FontSize="26"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
